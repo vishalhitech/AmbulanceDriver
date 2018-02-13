@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Set LOCATION_PROVIDER here:
     String LOCATION_PROVIDER_GPS = LocationManager.GPS_PROVIDER;
-    String LOCATION_PROVIDER_NTW = LocationManager.NETWORK_PROVIDER;
+ //   String LOCATION_PROVIDER_NTW = LocationManager.NETWORK_PROVIDER;
 
     // LocationManager and a LocationListener here:
     LocationManager mLocationManager;
@@ -95,8 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-
-
             }
         });
 
@@ -148,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
             public void onProviderDisabled(String provider) {
                 Log.d("Ambi_App", "onProviderDisable() callback Received");
 
-                //startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
             }
         };
 
@@ -165,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         mLocationManager.requestLocationUpdates(LOCATION_PROVIDER_GPS, MIN_TIME, MIN_DISTANCE, mLocationListener);
-        mLocationManager.requestLocationUpdates(LOCATION_PROVIDER_NTW, MIN_TIME, MIN_DISTANCE, mLocationListener);
+      //  mLocationManager.requestLocationUpdates(LOCATION_PROVIDER_NTW, MIN_TIME, MIN_DISTANCE, mLocationListener);
     }
 
 
