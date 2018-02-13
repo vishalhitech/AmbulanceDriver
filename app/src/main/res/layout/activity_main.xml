@@ -32,7 +32,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/colorAccent"
         android:ems="10"
-        android:hint="Enter Your Id :"
+        android:hint="Enter Device ID :"
         android:inputType="textPersonName"
         android:paddingTop="5dp"
         android:textSize="24sp"
