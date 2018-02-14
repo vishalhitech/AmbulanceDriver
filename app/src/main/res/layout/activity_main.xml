@@ -11,17 +11,31 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:lineSpacingExtra="8sp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:paddingTop="40dp"
         android:text="Welcome to Ambulance Driver Services"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="40sp"
-        android:textStyle="bold"
+        tools:ignore="HardcodedText"
         tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="150dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <EditText
+        android:id="@+id/DeviceID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:hint="Enter Your Id :"
+        android:inputType="textPersonName"
+        android:paddingTop="5dp"
+        android:textSize="24sp"
         tools:ignore="HardcodedText" />
 
     <RelativeLayout
@@ -29,7 +43,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,11 +51,13 @@
             android:layout_centerVertical="true"
             android:background="@color/colorExtra"
             android:onClick="go_to_info"
-            android:text="Next"
+            android:text="ON"
             android:textSize="18sp"
+            android:textStyle="bold"
             tools:ignore="HardcodedText,MissingConstraints"
             tools:layout_editor_absoluteX="148dp"
             tools:layout_editor_absoluteY="374dp" />
+
     </RelativeLayout>
 
 </LinearLayout>
